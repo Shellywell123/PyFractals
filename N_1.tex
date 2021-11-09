@@ -1,0 +1,28 @@
+
+\documentclass[11pt]{article}
+\usepackage[landscape, letterpaper, margin=.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{multicol}
+\begin{document}
+
+
+    \section{Fractal N = 1}
+    \begin{figure}[h!]
+      \centering
+      \includegraphics[scale=0.7]{output//N=1//N=1_lattice.png}
+      \caption{Lattice}
+    \end{figure}
+    
+    \subsection{Hamoltionian}
+    $H=\epsilon \left(\overline{\psi_{0, 0}} \psi_{0, 0} + \overline{\psi_{1, 0}} \psi_{1, 0} + \overline{\psi_{2, 0}} \psi_{2, 0} + \overline{\psi_{3, 0}} \psi_{3, 0} + \overline{\psi_{4, 0}} \psi_{4, 0} + \overline{\psi_{5, 0}} \psi_{5, 0} + \overline{\psi_{6, 0}} \psi_{6, 0} + \overline{\psi_{7, 0}} \psi_{7, 0} + \overline{\psi_{8, 0}} \psi_{8, 0}\right) - t \left(\overline{\psi_{0, 0}} \psi_{3, 0} + \overline{\psi_{0, 0}} \psi_{4, 0} + \overline{\psi_{1, 0}} \psi_{3, 0} + \overline{\psi_{1, 0}} \psi_{5, 0} + \overline{\psi_{2, 0}} \psi_{4, 0} + \overline{\psi_{2, 0}} \psi_{5, 0} + \overline{\psi_{3, 0}} \psi_{0, 0} + \overline{\psi_{3, 0}} \psi_{1, 0} + \overline{\psi_{3, 0}} \psi_{4, 0} + \overline{\psi_{3, 0}} \psi_{5, 0} + \overline{\psi_{4, 0}} \psi_{0, 0} + \overline{\psi_{4, 0}} \psi_{2, 0} + \overline{\psi_{4, 0}} \psi_{3, 0} + \overline{\psi_{4, 0}} \psi_{5, 0} + \overline{\psi_{5, 0}} \psi_{1, 0} + \overline{\psi_{5, 0}} \psi_{2, 0} + \overline{\psi_{5, 0}} \psi_{3, 0} + \overline{\psi_{5, 0}} \psi_{4, 0}\right)$
+
+    \subsection{Matrix}
+    $\left[\begin{matrix}\epsilon & 0 & 0 & - t & - t & 0 & 0 & 0 & 0\\0 & \epsilon & 0 & - t & 0 & - t & 0 & 0 & 0\\0 & 0 & \epsilon & 0 & - t & - t & 0 & 0 & 0\\- t & - t & 0 & \epsilon & - t & - t & 0 & 0 & 0\\- t & 0 & - t & - t & \epsilon & - t & 0 & 0 & 0\\0 & - t & - t & - t & - t & \epsilon & 0 & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & \epsilon & 0 & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & \epsilon & 0\\0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \epsilon\end{matrix}\right]$
+
+    \subsection{Eigen Values}
+    $\left\{ \epsilon : 3, \  \epsilon - t + \sqrt{5} t : 1, \  \epsilon + \frac{t}{2} + \frac{\sqrt{5} t}{2} : 2, \  \epsilon - \sqrt{5} t - t : 1, \  \epsilon - \frac{\sqrt{5} t}{2} + \frac{t}{2} : 2\right\}$
+
+    \subsection{Eigen Vectors}
+    $\left[ \left( \epsilon, \  3, \  \left[ \left[\begin{matrix}0\\0\\0\\0\\0\\0\\1\\0\\0\end{matrix}\right], \  \left[\begin{matrix}0\\0\\0\\0\\0\\0\\0\\1\\0\end{matrix}\right], \  \left[\begin{matrix}0\\0\\0\\0\\0\\0\\0\\0\\1\end{matrix}\right]\right]\right), \  \left( \epsilon - t + \sqrt{5} t, \  1, \  \left[ \left[\begin{matrix}\frac{\epsilon - 2 t}{2 t} - \frac{\epsilon - t + \sqrt{5} t}{2 t}\\\frac{\epsilon - 2 t}{2 t} - \frac{\epsilon - t + \sqrt{5} t}{2 t}\\\frac{\epsilon - 2 t}{2 t} - \frac{\epsilon - t + \sqrt{5} t}{2 t}\\1\\1\\1\\0\\0\\0\end{matrix}\right]\right]\right), \  \left( \epsilon + \frac{t}{2} + \frac{\sqrt{5} t}{2}, \  2, \  \left[ \left[\begin{matrix}0\\\frac{- \epsilon - t}{t} + \frac{\epsilon + \frac{t}{2} + \frac{\sqrt{5} t}{2}}{t}\\\frac{\epsilon + t}{t} - \frac{\epsilon + \frac{t}{2} + \frac{\sqrt{5} t}{2}}{t}\\-1\\1\\0\\0\\0\\0\end{matrix}\right], \  \left[\begin{matrix}\frac{- \epsilon - t}{t} + \frac{\epsilon + \frac{t}{2} + \frac{\sqrt{5} t}{2}}{t}\\0\\\frac{\epsilon + t}{t} - \frac{\epsilon + \frac{t}{2} + \frac{\sqrt{5} t}{2}}{t}\\-1\\0\\1\\0\\0\\0\end{matrix}\right]\right]\right), \  \left( \epsilon - \sqrt{5} t - t, \  1, \  \left[ \left[\begin{matrix}\frac{\epsilon - 2 t}{2 t} - \frac{\epsilon - \sqrt{5} t - t}{2 t}\\\frac{\epsilon - 2 t}{2 t} - \frac{\epsilon - \sqrt{5} t - t}{2 t}\\\frac{\epsilon - 2 t}{2 t} - \frac{\epsilon - \sqrt{5} t - t}{2 t}\\1\\1\\1\\0\\0\\0\end{matrix}\right]\right]\right), \  \left( \epsilon - \frac{\sqrt{5} t}{2} + \frac{t}{2}, \  2, \  \left[ \left[\begin{matrix}0\\\frac{- \epsilon - t}{t} + \frac{\epsilon - \frac{\sqrt{5} t}{2} + \frac{t}{2}}{t}\\\frac{\epsilon + t}{t} - \frac{\epsilon - \frac{\sqrt{5} t}{2} + \frac{t}{2}}{t}\\-1\\1\\0\\0\\0\\0\end{matrix}\right], \  \left[\begin{matrix}\frac{- \epsilon - t}{t} + \frac{\epsilon - \frac{\sqrt{5} t}{2} + \frac{t}{2}}{t}\\0\\\frac{\epsilon + t}{t} - \frac{\epsilon - \frac{\sqrt{5} t}{2} + \frac{t}{2}}{t}\\-1\\0\\1\\0\\0\\0\end{matrix}\right]\right]\right)\right]$
+    \end{document}

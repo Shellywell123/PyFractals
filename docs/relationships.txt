@@ -1,0 +1,8 @@
+n-number of sites
+0-3
+1-9
+2-27
+3-81
+4-243
+
+number_of_sites=3^(n+1)
